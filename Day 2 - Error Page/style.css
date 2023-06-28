@@ -93,6 +93,8 @@ p {
     height : 7vh;
     display: flex;
     align-items: center;
+    padding-top: 50px;
+
 }
 
 img {
@@ -109,5 +111,27 @@ img {
     text-decoration: none;
     padding: 24px 43px;
     background-color: var(--font-color);
+
+}
+
+@media (min-width: 768px) {
+    .container {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .container .left {
+        width: 40%;
+    }
+
+    .container .right {
+        width: 60%;
+        padding-left: 40px;
+    }
+
+    .button-container {
+        justify-content: flex-start;
+        padding-top: 100px;
+    }
 
 }
