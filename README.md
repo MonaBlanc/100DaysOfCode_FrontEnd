@@ -10,6 +10,6 @@ I'm starting the 100 Days of Code challenge to improve myself in front-end.
 ### Day 2
 - Day 2: Error Page | Dev Challenges
 - Day 2: Operators | HackerRank 
-  ### Day 3
+### Day 3
 - Day 3: Error Page Responsive | Dev Challenges
 - Day 3: Conditionnal Statement | HackerRank 
