@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=PT+Serif:wght@400;700&family=Poppins:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fff;
+    height: 100%;
+    min-height: 100vh;
+    width: auto;
+
+    position: relative;
+
+}
+
+h1{
+    color: #000;
+    font-size: 36px;
+    font-family: PT Serif;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -1.62px;
+}
+
+.intro h3{
+    color: #000;
+    font-size: 18px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.intro p{
+    color: #000;
+    font-size: 14px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: left;
+}
+
+
+.person h3{
+    color: #000;
+    font-size: 14px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+
+p {
+    color: #A9A9A9;
+    text-align: center;
+    font-size: 14px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-align: center;
+}
+
+a{
+    color: #A9A9A9;
+    text-decoration: none;
+}
+
+.title{
+    position: relative;
+    padding-top: 50px;
+    padding-left: 5%;
+    height : 100px;
+}
+
+.intro{
+    position: relative;
+    padding-top: 20px;
+    padding-left: 5%;
+    text-align: left;
+}
+
+.container{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 0;
+}
+
+.person{
+    position: relative;
+    padding-top: 60px;
+    padding-left: 7%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 280px;
+
+}
+
+.person p{
+    position: absolute;
+    z-index: 1;
+    right: -30px;
+    color: #000;
+    font-size: 10px;
+    font-family: PT Serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    transform-origin: left;
+    text-transform: uppercase;
+    text-align: left;
+    display: flex;
+    width: 130px;
+    transform: rotate(90deg);
+    flex-direction: column;
+}
+
+.person img{
+    aspect-ratio: 476/694;
+    width:  140px;
+}
+
+.person:nth-child(2n + 1){
+    padding-top: 100px;
+}
+
+
+#footer {
+    width: 100%;
+    height: 6vh;
+    color: #BDBDBD;
+    text-align: center;
+    font-size: 14px;
+    font-family: Montserrat;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-bottom: 0;
+    margin-top: 20px;
+}
