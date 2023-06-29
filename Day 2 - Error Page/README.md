@@ -8,11 +8,11 @@
 
 <div align="center">
   <h3>
-    <a href="https://{your-demo-link.your-domain}">
+    <a href="https://100-days-of-code-front-r9ydgbi2j-monablanc.vercel.app/">
       Demo
     </a>
     <span> | </span>
-    <a href="https://{your-url-to-the-solution}">
+    <a href="https://github.com/MonaBlanc/100DaysOfCode_FrontEnd/tree/main/Day%202%20-%20Error%20Page">
       Solution
     </a>
     <span> | </span>
