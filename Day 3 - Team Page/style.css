@@ -1,104 +1,62 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=PT+Serif:wght@400;700&family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+:root {
+    --font-PT: 'PT Serif', serif;
+    --font-Poppins: 'Poppins', sans-serif;
+    --font-Poppins-regular: 400;
+    --font-Poppins-Semibols: 600;
+    --font-PT-regular: 400;
+    --font-PT-bold: 700;
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--font-Poppins);
     background-color: #fff;
     height: 100%;
     min-height: 100vh;
     width: auto;
-
     position: relative;
-
 }
 
-h1{
+h1 {
     color: #000;
     font-size: 36px;
-    font-family: PT Serif;
-    font-style: normal;
-    font-weight: 700;
+    font-family: var(--font-PT);
+    font-weight: var(--font-PT-bold);
     line-height: normal;
     letter-spacing: -1.62px;
 }
 
-.intro h3{
+h3 {
     color: #000;
     font-size: 18px;
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: 600;
+    font-family: var(--font-Poppins);
+    font-weight: var(--font-Poppins-Semibols);
     line-height: normal;
     text-transform: uppercase;
 }
 
-.intro p{
-    color: #000;
-    font-size: 14px;
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    text-align: left;
-}
-
-
-.person h3{
-    color: #000;
-    font-size: 14px;
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-}
-
-
 p {
-    color: #A9A9A9;
-    text-align: center;
+    color: #000;
     font-size: 14px;
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 500;
+    font-family: var(--font-Poppins);
+    font-weight: var(--font-Poppins-regular);
     line-height: normal;
-    text-align: center;
-}
-
-a{
-    color: #A9A9A9;
-    text-decoration: none;
-}
-
-.title{
-    position: relative;
-    padding-top: 50px;
-    padding-left: 5%;
-    height : 100px;
-}
-
-.intro{
-    position: relative;
-    padding-top: 20px;
-    padding-left: 5%;
     text-align: left;
 }
 
-.container{
+.container {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 100%;
     height: 100%;
     position: relative;
     z-index: 0;
 }
 
-.person{
+.person {
     position: relative;
     padding-top: 60px;
     padding-left: 7%;
@@ -106,18 +64,16 @@ a{
     flex-direction: column;
     flex-wrap: wrap;
     width: 280px;
-
 }
 
-.person p{
+.person p {
     position: absolute;
     z-index: 1;
     right: -30px;
     color: #000;
     font-size: 10px;
-    font-family: PT Serif;
-    font-style: normal;
-    font-weight: 400;
+    font-family: var(--font-PT);
+    font-weight: var(--font-PT-regular);
     line-height: normal;
     transform-origin: left;
     text-transform: uppercase;
@@ -128,27 +84,51 @@ a{
     flex-direction: column;
 }
 
-.person img{
+.person img {
     aspect-ratio: 476/694;
-    width:  140px;
+    width: 140px;
 }
-
-.person:nth-child(2n + 1){
-    padding-top: 100px;
-}
-
 
 #footer {
     width: 100%;
     height: 6vh;
-    color: #BDBDBD;
+    color: #bdbcbc;
     text-align: center;
     font-size: 14px;
-    font-family: Montserrat;
+    font-family: var(--font-Poppins);
     position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
     margin-bottom: 0;
     margin-top: 20px;
+}
+
+#footer a {
+    text-decoration: none;
+    color: #8b8b8b;
+}
+
+@media (max-width: 700px) {
+    .container {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .person {
+        padding: 0;
+        margin-bottom: 30px;
+    }
+
+    .person p {
+        position: unset;
+        transform: none;
+        text-align: center;
+        width: auto;
+        margin-top: 10px;
+        right: unset;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
 }
