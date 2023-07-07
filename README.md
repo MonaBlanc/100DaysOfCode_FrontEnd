@@ -35,3 +35,5 @@ I'm starting the 100 Days of Code challenge to improve myself in front-end.
 ### Day 11
 - Day 11: Understanding tables & last element selector CSS | Personal Creative Project
 - Day 11: Adding the left section content | Personal Creative Project
+### Day 12
+- Day 12: Typescript Course | Udemy
